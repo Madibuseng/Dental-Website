@@ -3,10 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 import { FaWhatsapp } from "react-icons/fa"
 import { TiThMenu } from "react-icons/ti"
+import WhatsappBtn from './WhatsappBtn'
 
 function Header() {
   return (
-    <nav className='bg-[#ffffff] p-4 border-b-solid border-b-[1px] border-b-gray-700'>
+    <nav className='bg-[#ffffff] p-4 border-b-solid border-b-[1px] border-b-gray-700 sticky top-0 z-50'>
         <div className='flex p-4 items-center justify-start max-w-6xl mx-auto'>
             <div className='flex-grow'>
                 <Image src={"/logo.png"} alt='Forways dental Studio Logo' width={100} height={100}/>
@@ -36,16 +37,7 @@ function Header() {
                             <div>Whatsapp</div>
                         </Link>
                     </li>
-                    <li className='lg:hidden inline'>
-                        <Link href={"/"} className='flex text-green font-semibold text-[17px] space-x-2 items-center'>
-                            <div>
-                                <span>Menu</span>
-                            </div>
-                            <div>
-                                <TiThMenu size={20}/>
-                            </div>
-                        </Link>
-                    </li>
+                    <WhatsappBtn/>
                 </ul>
             </div>
         </div>
