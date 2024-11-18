@@ -1,6 +1,7 @@
 
 'use client'
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 
@@ -11,7 +12,7 @@ function ContentCards() {
     const [info, setInfo] = useState();
     
     useEffect(() => {
-        fetch('http://localhost:3000/api')
+        fetch('http://localhost:3000/api/cardcontent1')
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -24,14 +25,21 @@ function ContentCards() {
 
   return (
     <div>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto -mt-20 '>
+        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6  gap-52 max-w-7xl mx-auto -mt-20 md:h-full '>
             {
                 info &&
                 info.sections?.map((card, index)=>(
-                    <div key={index}>
-                        <div className='p-4 rounded-lg ring-2 ring-gray-600'>
-                            <h3 className="text-3xl">{card.title}</h3>
-                            <p>{card.content}</p>
+                    <div key={index} className="relative min-h-full bg-white rounded-3xl p-4 shadow-md shadow-black group hover:bg-green transition duration-300 ease-in">
+                        <div></div>
+                        <div className="lg:inline md:hidden  absolute  -top-40 md:-left-20 overflow-hidden -z-10 group-hover:left-0 transtion duration-700 ease-in group-hover:scale-110">
+                            <Image src={card.image} width={200} height={400} alt="Card Image"/>
+
+                        </div>
+                        <div className='p-4 roununded min-h-full'>
+                            <h3 className="text-xl font-semibold">{card.title}</h3>
+                            <div className="border-b-[1px] border-b-dotted p-2 border-black">
+                            </div>
+                            <p className="mt-2 text-sm">{card.content}</p>
                         </div>
 
                     </div>
