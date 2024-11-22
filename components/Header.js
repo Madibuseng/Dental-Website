@@ -1,11 +1,26 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaWhatsapp } from "react-icons/fa"
 import { TiThMenu } from "react-icons/ti"
+import MobileNav from './MobileNav'
 // import WhatsappBtn from './WhatsappBtn'
 
 function Header() {
+
+    const [toggle, setToggle] = useState(false);
+
+const handleClick = ()=>{
+
+  setToggle(!toggle)
+ 
+  console.log(toggle);
+}
+
+
+
   return (
     <nav className='bg-[#ffffff] p-4 border-b-solid border-b-[1px] border-b-gray-700 sticky top-0 z-50'>
         <div className='flex p-4 items-center justify-start max-w-6xl mx-auto'>
@@ -37,7 +52,7 @@ function Header() {
                             <div>Whatsapp</div>
                         </Link>
                     </li>
-                    {/* <li className='lg:hidden inline'>
+                    <li onClick={handleClick} className='lg:hidden inline cursor-pointer relative'>
                         <a target='_blank'  className='flex text-green font-semibold text-[17px] space-x-2 items-center'>
                             <div>
                                 <span>Menu</span>
@@ -46,10 +61,13 @@ function Header() {
                                 <TiThMenu size={20}/>
                             </div>
                         </a>
-                    </li> */}
+                        
+                    </li>
                 </ul>
             </div>
         </div>
+        {/* mobile nav */}
+        <MobileNav toggle={toggle} setToggle={setToggle}/>
     </nav>
   )
 }

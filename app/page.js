@@ -18,10 +18,10 @@ export default function Home() {
         <ContentCards/>
         <div id="blog" className="h-40"></div>
         <Blog/>
-        <div id="services" className="h-40"></div>
+        <div  className="h-40"></div>
         
         <About/>
-        <div  className="h-40"></div>
+        <div id="services"  className="h-40"></div>
         
         
         <ContentCards2/>
