@@ -12,7 +12,7 @@ function ContentCards2() {
     const [info, setInfo] = useState();
     
     useEffect(() => {
-        fetch('https://fourways-dental-studio.vercel.app//api/cardcontent2')
+        fetch('https://fourways-dental-studio.vercel.app/api/cardcontent2')
             .then(response => response.json())
             .then(data => {
                 console.log(data)
