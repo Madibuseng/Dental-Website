@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaQuoteLeft } from "react-icons/fa";
-import FramerWrapper from './FramerWrapper';
 
 function Blog() {
   return (

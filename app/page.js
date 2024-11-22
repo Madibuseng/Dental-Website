@@ -4,7 +4,6 @@ import ContentCards from "@/components/ContentCards";
 import ContentCards2 from "@/components/ContentCards2";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import FramerWrapper from "@/components/FramerWrapper";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
 import Testimonials from "@/components/Testimonials";
@@ -20,10 +19,10 @@ export default function Home() {
         <div id="blog" className="h-40"></div>
         <Blog/>
         <div id="services" className="h-40"></div>
-        <FramerWrapper   >
-          <About/>
-          <div  className="h-40"></div>
-        </FramerWrapper>
+        
+        <About/>
+        <div  className="h-40"></div>
+        
         
         <ContentCards2/>
         <div id="cta" className="h-40"></div>
