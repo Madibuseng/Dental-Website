@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import FramerWrapper from "./FramerWrapper";
 
 
 
@@ -29,7 +30,7 @@ function ContentCards() {
             {
                 info &&
                 info.sections?.map((card, index)=>(
-                    <div key={index} className="relative min-h-full bg-white rounded-3xl p-4 shadow-md shadow-black group hover:bg-green transition duration-300 ease-in">
+                    <div   key={index} className="relative min-h-full bg-white rounded-3xl p-4 shadow-md shadow-black group hover:bg-[#25BE97] transition duration-300 ease-in">
                         <div></div>
                         <div className="lg:inline md:hidden  absolute  -top-40 md:-left-20 overflow-hidden -z-10 group-hover:left-0 transtion duration-700 ease-in group-hover:scale-110">
                             <Image src={card.image} width={200} height={400} alt="Card Image"/>

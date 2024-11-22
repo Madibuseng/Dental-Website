@@ -5,14 +5,14 @@ import { TiThMenu } from 'react-icons/ti'
 function WhatsappBtn() {
   return (
     <div className='lg:hidden inline'>
-        <Link href={"/"} className='flex text-green font-semibold text-[17px] space-x-2 items-center'>
+        {/* <a target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20genral%20info"} className='flex text-green font-semibold text-[17px] space-x-2 items-center'>
             <div>
                 <span>Menu</span>
             </div>
             <div>
                 <TiThMenu size={20}/>
             </div>
-        </Link>
+        </a> */}
     </div>
   )
 }

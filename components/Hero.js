@@ -1,5 +1,5 @@
 import React from 'react'
-import WhatsappBtn from './WhatsappBtn'
+// import WhatsappBtn from './WhatsappBtn'
 
 function Hero() {
   return (
@@ -19,14 +19,14 @@ function Hero() {
 
             <div className="mt-12 flex max-sm:flex-col lg:justify-start gap-4">
               <div className="rounded-md shadow">
-                <button className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
+                <a href='#cta' className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
                   Request an Apointment
-                </button>
+                </a>
               </div>
               <div>
-                <button className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-white bg-green hover:bg-gray-500 hover:text-green transition duration-150 ease-in-out">
+                <a href='tel:+27113254407' className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-white bg-green hover:bg-gray-500 hover:text-green transition duration-150 ease-in-out">
                   Contact US
-                </button>
+                </a>
               </div>
             </div>
           </div>

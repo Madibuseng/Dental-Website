@@ -26,7 +26,7 @@ function ContentCards2() {
   return (
     <div className="p-4">
         <div className="max-w-6xl mx-auto mt-10 flex flex-col items-center justify-center">
-            <h2 className="text-4xl pb-2">Oral Health Products</h2>
+            <h2 className="text-4xl pb-2">Oral Health Programs</h2>
             <img src="/divider.png" width="200" alt="" className="pt-2" />
         </div>
         <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 gap-4 max-w-7xl mx-auto  m-10'>

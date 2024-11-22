@@ -16,10 +16,10 @@ export const SendEmail = async (formdata) => {
   }
   await resend.emails.send({
     from: "Contact Form <onboarding@resend.dev>",
-    to: `lerutlamojapelo03@gmail.com`,
-    subject: `From Website Client.`,
+    to: `info@fourwausdentalstudio.com`,
+    subject: `Email from Website.`,
     reply_to: `${SenderEmail}`,
-    text: `sender email: ${SenderEmail} 
+    text: `Email me back at: ${SenderEmail} 
      `,
   });
 
