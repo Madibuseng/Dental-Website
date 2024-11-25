@@ -22,7 +22,7 @@ export default function Home() {
         <Blog/>
         <div  className="h-40"></div>
         <About/>
-        <div id="services"  className="h-40"></div>
+        <div  id="services" className="h-40"></div>
         <ContentCards2/>
         <div id="cta" className="h-40"></div>
         <CTA/>

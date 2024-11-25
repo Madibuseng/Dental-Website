@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from 'react-scroll';
 import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -7,17 +7,27 @@ function MobileNav({toggle, setToggle}) {
     <div className={`z-[100] ${toggle? "block":"hidden"}`}>
     <nav className="bg-white shadow-lg h-screen absolute top-0 left-0 min-w-[240px] py-6 px-4 font-[sans-serif] overflow-auto z-[100]">
       <ul className='flex flex-col space-y-4'>
-        <li onClick={()=>setToggle(false)}>
-          <a href="#services"
-            className="text-black hover:text-green hover:font-semibold text-[15px] block bg-gray-200 rounded px-4 py-2.5 transition-all">
+        <li >
+          <Link
+          onClick={()=>setToggle(false)}
+           to="services"  // Section ID that we will scroll to
+           smooth={true}   // Enable smooth scrolling
+           duration={500}  // Duration of scroll in milliseconds
+           offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
+            className="text-black hover:text-green hover:font-semibold text-[15px] block bg-gray-200 rounded px-4 py-2.5 transition-all cursor-pointer">
             Our Services
-          </a>
+          </Link>
         </li>
-        <li onClick={()=>setToggle(false)}>
-          <a href="#blog"
-            className="text-black hover:text-green hover:font-semibold text-[15px] block bg-gray-200 rounded px-4 py-2.5 transition-all">
+        <li >
+          <Link 
+            onClick={()=>setToggle(false)}
+            to="blog"  // Section ID that we will scroll to
+            smooth={true}   // Enable smooth scrolling
+            duration={500}  // Duration of scroll in milliseconds
+            offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
+            className="text-black hover:text-green hover:font-semibold text-[15px] block bg-gray-200 rounded px-4 py-2.5 transition-all cursor-pointer">
             Blog
-          </a>
+          </Link>
         </li>
         <li onClick={()=>setToggle(false)}>
           <a href="#cta"

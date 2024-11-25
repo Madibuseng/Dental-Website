@@ -1,12 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaWhatsapp } from "react-icons/fa"
 import { TiThMenu } from "react-icons/ti"
 import MobileNav from './MobileNav'
 // import WhatsappBtn from './WhatsappBtn'
+import { Link } from 'react-scroll';
 
 function Header() {
 
@@ -21,6 +21,8 @@ const handleClick = ()=>{
 
 
 
+  
+
   return (
     <nav className='bg-[#ffffff] p-4 border-b-solid border-b-[1px] border-b-gray-700 sticky top-0 z-50'>
         <div className='flex p-4 items-center justify-start max-w-6xl mx-auto'>
@@ -30,12 +32,22 @@ const handleClick = ()=>{
             <div>
                 <ul className='flex space-x-6 items-center'>
                     <li className='hidden lg:inline'>
-                        <Link href={"#services"} className='text-green font-semibold text-[17px]'>
+                        <Link 
+                            to="services"  // Section ID that we will scroll to
+                            smooth={true}   // Enable smooth scrolling
+                            duration={500}  // Duration of scroll in milliseconds
+                            offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
+                            className='text-green font-semibold text-[17px] cursor-pointer'>
                             Our Services
                         </Link>
                     </li>
                     <li className='hidden lg:inline'>
-                        <Link href={"#blog"} className='text-green font-semibold text-[17px]'>
+                        <Link 
+                            to="blog"  // Section ID that we will scroll to
+                            smooth={true}   // Enable smooth scrolling
+                            duration={500}  // Duration of scroll in milliseconds
+                            offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
+                            className='text-green font-semibold text-[17px] cursor-pointer'>
                             Blog
                         </Link>
                     </li>
