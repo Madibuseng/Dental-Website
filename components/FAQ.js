@@ -22,12 +22,25 @@ export default function FAQ() {
             answer:
               "If you’re experiencing a dental emergency, call our office immediately. We’ll prioritize your care and provide urgent assistance.",
           },
+          {
+            question: "How often should I see the dentist?",
+            answer:"You should visit the dentist at least twice a year, or more often if your dentist recommends it."
+
+          },
+          {
+            question: "What are early signs of dental trouble?",
+            answer:"Look out for mouth sores, jaw pain, redness, or a swollen face or gums."
+          },
+          {
+            question: "Why do I have bad breath?", 
+            answer:"Bad breath is usually caused by poor oral hygiene, such as food particles left in your mouth. Brushing and flossing regularly can help."
+          }
     ];
   
     return (
       <div className="max-w-7xl mx-auto sm:px-8 px-4 font-sans">
         <div className="mb-12 max-w-4xl">
-        <div className="max-w-6xl mx-auto mt-10 flex flex-col items-center justify-center">
+        <div className="max-w-6xl mx-auto mt-10 flex flex-col">
             <h2 className="hidden sm:block text-4xl pb-2">Frequently Asked Questions</h2>
             <h2 className="sm:hidden text-4xl pb-2">FAQs</h2>
             <img src="/divider.png" width="200" alt="" className="pt-2" />

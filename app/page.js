@@ -5,6 +5,7 @@ import ContentCards2 from "@/components/ContentCards2";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
 import Testimonials from "@/components/Testimonials";
@@ -20,14 +21,13 @@ export default function Home() {
         <div id="blog" className="h-40"></div>
         <Blog/>
         <div  className="h-40"></div>
-        
         <About/>
         <div id="services"  className="h-40"></div>
-        
-        
         <ContentCards2/>
         <div id="cta" className="h-40"></div>
         <CTA/>
+        <div id="" className="h-40"></div>
+        <Gallery/>
         <div id="" className="h-40"></div>
         <Testimonials/>
         <div id="" className="h-40"></div>

@@ -31,7 +31,13 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img src="/hero-image1.png"  className='hidden absolute lg:inline  w-screen -top-60 -z-10'/>
+        <video 
+         autoPlay
+         loop
+         muted
+         playsInline
+        
+        src="/hero-video.mp4"  className='hidden absolute lg:inline  w-screen -top-60 -z-10'/>
       </div>
     </div>
     </div>
