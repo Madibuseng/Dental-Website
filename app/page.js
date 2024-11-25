@@ -3,6 +3,7 @@ import Blog from "@/components/Blog";
 import ContentCards from "@/components/ContentCards";
 import ContentCards2 from "@/components/ContentCards2";
 import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
@@ -31,6 +32,8 @@ export default function Home() {
         <Testimonials/>
         <div id="" className="h-40"></div>
         <Map/>
+        <div id="" className="h-40"></div>
+        <FAQ/>
         <div id="" className="h-40"></div>
         <Footer/>
       </main>
