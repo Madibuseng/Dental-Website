@@ -52,9 +52,9 @@ const handleClick = ()=>{
                         </Link>
                     </li>
                     <li className='hidden lg:inline'>
-                        <Link href={"tel:+27113254407"} className='text-green font-semibold text-[17px]'>
+                        <a href={"tel:+27113254407"} className='text-green font-semibold text-[17px]'>
                             Contact Us
-                        </Link>
+                        </a>
                     </li>
                     <li>
                         <a target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20general%20info"} className='animate-pulse flex bg-slate-500 px-4 py-2 rounded-lg space-x-3 items-center text-white font-semibold hover:bg-white hover:ring-gray-500 hover:text-gray-500 hover:ring-2 hover:scale-110 transition duration-500 ease-in-out'>

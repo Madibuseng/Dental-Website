@@ -27,7 +27,7 @@ function Hero() {
                  smooth={true}   // Enable smooth scrolling
                  duration={500}  // Duration of scroll in milliseconds
                  offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
-                className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
+                className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out cursor-pointer">
                   Request an Apointment
                 </Link>
               </div>
