@@ -57,12 +57,12 @@ const handleClick = ()=>{
                         </Link>
                     </li>
                     <li>
-                        <Link target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20general%20info"} className='animate-pulse flex bg-slate-500 px-4 py-2 rounded-lg space-x-3 items-center text-white font-semibold hover:bg-white hover:ring-gray-500 hover:text-gray-500 hover:ring-2 hover:scale-110 transition duration-500 ease-in-out'>
+                        <a target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20general%20info"} className='animate-pulse flex bg-slate-500 px-4 py-2 rounded-lg space-x-3 items-center text-white font-semibold hover:bg-white hover:ring-gray-500 hover:text-gray-500 hover:ring-2 hover:scale-110 transition duration-500 ease-in-out'>
                             <div>
                                 <FaWhatsapp size={20}/>
                             </div>
                             <div>Whatsapp</div>
-                        </Link>
+                        </a>
                     </li>
                     <li onClick={handleClick} className='lg:hidden inline cursor-pointer relative'>
                         <a target='_blank'  className='flex text-green font-semibold text-[17px] space-x-2 items-center'>

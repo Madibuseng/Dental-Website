@@ -28,7 +28,7 @@ function CTA() {
             className="bg-green hover:bg-[#3da819] transition-all text-white text-sm rounded-full px-4 py-2.5 whitespace-nowrap">Email Us</button>
         </div>
         <div className='p-4 justify-center md:w-4/5 overflow-hidden items-center'>
-        <Link target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20genral%20info"} className='flex justify-center px-4 py-2 rounded-lg space-x-3 items-center text-white font-semibold  ring-white ring-2  transition duration-500 ease-in-out text-center'>
+        <Link target='_blank' href={"https://wa.me/27662797957?text=I%27m%20interested%20in%20general%20info"} className='flex justify-center px-4 py-2 rounded-lg space-x-3 items-center text-white font-semibold  ring-white ring-2  transition duration-500 ease-in-out text-center'>
             <div>
               <FaWhatsapp size={20}/>
             </div>

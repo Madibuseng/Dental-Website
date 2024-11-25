@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react'
+import { Link } from 'react-scroll'
 // import WhatsappBtn from './WhatsappBtn'
 
 function Hero() {
@@ -19,9 +22,14 @@ function Hero() {
 
             <div className="mt-12 flex max-sm:flex-col lg:justify-start gap-4">
               <div className="rounded-md shadow">
-                <a href='#cta' className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
+                <Link 
+                 to="cta"  // Section ID that we will scroll to
+                 smooth={true}   // Enable smooth scrolling
+                 duration={500}  // Duration of scroll in milliseconds
+                 offset={-70}    // Offset for scrolling (e.g., to adjust for fixed header)
+                className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-green bg-white hover:text-gray-500 hover:bg-indigo-100 transition duration-150 ease-in-out">
                   Request an Apointment
-                </a>
+                </Link>
               </div>
               <div>
                 <a href='tel:+27113254407' className="w-full flex items-center justify-center px-8 py-3 text-base tracking-wide rounded-md text-white bg-green hover:bg-gray-500 hover:text-green transition duration-150 ease-in-out">
