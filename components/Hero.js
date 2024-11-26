@@ -6,8 +6,8 @@ import { Link } from 'react-scroll'
 
 function Hero() {
   return (
-    <div className='min-h-screen'>
-        <div className="font-[sans-serif] h-screen">
+    <div className=''>
+        <div className="font-[sans-serif] ">
       <div className="relative overflow-hidden h-[80vh]">
         <div className="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:py-32 lg:px-8">
           <div className="relative z-10 ">

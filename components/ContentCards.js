@@ -12,7 +12,7 @@ function ContentCards() {
     const [info, setInfo] = useState();
     
     useEffect(() => {
-        fetch('https://fourways-dental-studio.vercel.app/api/cardcontent1')
+        fetch('http://localhost:3000/api/cardcontent1')
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -25,7 +25,7 @@ function ContentCards() {
 
   return (
     <div>
-        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6  gap-52 max-w-7xl mx-auto -mt-20 md:h-full '>
+        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6  gap-52 max-w-7xl mx-auto md:h-full '>
             {
                 info &&
                 info.sections?.map((card, index)=>(

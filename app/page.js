@@ -16,12 +16,14 @@ export default function Home() {
     <div className="">
       <main>
         <Hero/>
+        <About/>
+        <div  className="h-40"></div>
         
         <ContentCards/>
         <div id="blog" className="h-40"></div>
         <Blog/>
         <div  className="h-40"></div>
-        <About/>
+        
         <div  id="services" className="h-40"></div>
         <ContentCards2/>
         <div id="cta" className="h-40"></div>
