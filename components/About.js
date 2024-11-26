@@ -26,11 +26,11 @@ function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <div className="mt-12 md:mt-0">
-                <img src="/about2.jpg" alt="About Us Image" className="object-cover rounded-lg shadow-md"/>
+                <img src="/about3.jpg" alt="About Us Image" className="object-cover rounded-lg shadow-md"/>
             </div>
             <div className="max-w-lg">
-                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl pb-5">We're Always Growing</h2>
-                <p className="mt-4 text-gray-600 text-lg">We understand the importance of refreshing and expanding our skills. That’s why our modern clinic is equipped with up-to-date technology and materials so that you can receive the safe and quality dental treatment you deserve. Our dentists, hygienists and specialists are always looking for the latest in dental techniques and technologies to make your visit as comprehensive, helpful and pleasant as possible.</p>
+                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl pb-5">As Convenient As Can Be</h2>
+                <p className="mt-4 text-gray-600 text-lg">Fourways Dental Studios truly cares about our oral health and wellbeing, as well as your experience when you visit us. As soon as you step into our clinic, we’ll do everything we can to ensure that your visit is as comfortable and accommodating as possible. We try our best to maintain flexible operating hours and are happy to accommodate family appointments. Got a special request? We would be happy for the opportunity to go above and beyond for you.</p>
                
                 <div className="mt-8">
                     {/* <a href="#" className="text-blue-500 hover:text-blue-600 font-medium">Learn more about us
