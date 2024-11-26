@@ -75,7 +75,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className='text-gray-300 text-sm mt-10'>© Forways Dental Studio. All rights reserved.
+      <p className='text-gray-300 text-sm mt-10'>© Forways Dental Studio.(+27 011 325 4407 / +27 66 279 7957) All rights reserved.
       </p>
     </footer>
   )

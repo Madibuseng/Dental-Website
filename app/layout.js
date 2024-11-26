@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Forways Dental Studio",
-  description: "providing transformational oral health care for those experiencing poverty. Our vision is that every individual has the opportunity to achieve and sustain a healthy smile.",
+  description: "Fourways Dental Studio is a Dental Clinic in 8 Sunset Ln, Pine Slopes AH, Sandton, 2194. It is lead by Dr. Sekgwari Frank Letsoalo.",
   
 };
 
